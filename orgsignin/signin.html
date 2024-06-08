@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="orgsign.css">
+    <script src="https://kit.fontawesome.com/fdc1a5ed26.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="org">
+        <div class="left">
+            <div class="sign">
+                <div class="inside">
+                    <h2 class="signin">SIGN IN</h2>
+                    <div class="icons">
+                        <button class="iconBtn google" onclick="signInWithGoogle()">
+                            <a href="#">
+                                <i class="fa-brands fa-google fa-2xl" style="color: #ffffff;"></i>
+                            </a>
+                        </button>
+
+                    </div>
+                    <span>or use your organisation email & password </span>
+                    <div>
+                        <input type="text" id="name" class="inputs" placeholder="Name" required><br>
+                    </div>
+
+                    <div>
+                        <input type="text" id="email" class="inputs" placeholder="Email"><br>
+                    </div>
+
+                    <div>
+                        <input type="password" name="email" id="pass" class="inputs" placeholder="Password"><br>
+                    </div>
+
+                    <button class="signinbtn" onclick="register()">Login and Click Next</button>
+                        <div >
+                            <a href="../users/userhomepg.html" style="text-decoration: none; color:white">NEXT </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="right show">
+            <h1>Welcome!</h1>
+            <span>Sign Up with us to register an event</span>
+            <a href="../users/userhomepg.html"><button type="button"><span>SIGN UP</span></button></a>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <!-- <script src="../firebaseConfig.js"></script> -->
+    <script src="../users/userhomepg.js"></script>
+</body>
+
+</html>

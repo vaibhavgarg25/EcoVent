@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../assets/2330708-uhd_3840_2160_24fps.mp4');
+    overflow: hidden;
+}
+
+.cards {
+    height: 40vh;
+    width: 20vw;
+    margin: 1vh;
+    padding: 1vh;
+    border-radius: 4vh;
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.cards:hover {
+    background-color: rgb(122, 243, 85);
+
+}
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    /* background-image: url('https://cdn1.parksmedia.wdprapps.disney.com/media/dm/images/imagesup/695b238cb1b406fa8a314d7872683549.jpg');
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: max(1800px, 100vw);
+    background-position: center center;
+    background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.add {
+    height: 10vh;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    font-size: 4.66vh;
+}
+
+.background-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+}
+a{
+    text-decoration: none;
+}
+#bg-video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%);
+}
+
+.content {
+
+    color: black;
+    text-align: center;
+    z-index: 1;
+    /* Ensure content is above video */
+}
